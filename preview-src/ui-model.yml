@@ -1,50 +1,37 @@
 antoraVersion: '3.1.2'
 asciidoc:
   extensions:
-  # TIP uncomment the next line to switch to Asciidoctor Tabs
-  - '@asciidoctor/tabs'
   - '@springio/asciidoctor-extensions'
 site:
   url: http://localhost:5252
-  title: Spring
+  title: Micrometer
   homeUrl: /index.html
   components:
-  - name: security
-    title: &component_title Spring Security
+  - name: micrometer
+    title: &component_title Micrometer
     url: '#'
-    versions: &security_versions
-    - &security_latest_version
+    versions: &micrometer_versions
+    - &micrometer_latest_version
       url: '/index.html'
       version: '6.1.4'
       displayVersion: '6.1.4'
       title: *component_title
       versionSegment: '5.6'
-    - &security_5_5_version
+    - &micrometer_5_5_version
       url: '/5.5/index.html'
       version: '5.5.9'
       displayVersion: '5.5.9'
       versionSegment: '5.5'
-    latest: *security_latest_version
-  - name: session
-    title: &session_component_title Spring Session
-    url: '#'
-    versions:
-      - &session_latest_version
-        url: '/session/index.html'
-        version: '2.5.9'
-        displayVersion: '2.5.9'
-        title: *session_component_title
-        versionSegment: '2.5'
-    latest: *session_latest_version
+    latest: *micrometer_latest_version
 shared:
-  security:
+  micrometer:
     5.5.9:
       home: true
-      title: Spring Security
+      title: Micrometer
       relativeSrcPath: index.adoc
       editUrl: http://example.com/project-xyz/blob/master/index.adoc
       component:
-        title: Spring Security
+        title: Micrometer
         url: '#'
         versions:
           - url: '/index.html'
@@ -56,7 +43,7 @@ shared:
             version: '5.5.9'
             displayVersion: '5.5.9'
             versionSegment: '5.5'
-      componentVersion: *security_5_5_version
+      componentVersion: *micrometer_5_5_version
       versions:
         - version: '6.1.4'
           displayVersion: '6.1.4'
@@ -80,14 +67,14 @@ shared:
                   url: '#'
     6.1.4:
       home: true
-      title: Spring Security
+      title: Micrometer
       relativeSrcPath: index.adoc
       editUrl: http://example.com/project-xyz/blob/master/index.adoc
       component:
-        title: &component_title Spring Security
+        title: &component_title Micrometer
         url: '#'
-        versions: *security_versions
-      componentVersion: *security_latest_version
+        versions: *micrometer_versions
+      componentVersion: *micrometer_latest_version
       versions:
         - version: '6.1.4'
           displayVersion: '6.1.4'
@@ -102,29 +89,10 @@ shared:
           items:
             - content: Overview
               url: '/index.html'
-            - content: Features
-              url: '/features/index.html'
-              items:
-                - content: Authentication
-                  url: '/features/authentication/index.html'
-                - content: Protection Against Exploits
-                  url: '/features/exploits/index.html'
-  session:
-    2.5.9:
-      home: true
-      title: Spring Session
-      relativeSrcPath: index.adoc
-      editUrl: http://example.com/project-xyz/blob/master/index.adoc
-      component:
-        title: Spring Session
-        url: '#'
-        versions:
-          - *session_latest_version
-      componentVersion: *session_latest_version
-      navigation:
-        - root: true
-          items:
-            - content: Session
-              url: '/session/index.html'
-            - content: Features
+            - content: Concepts
               url: '#'
+              items:
+                - content: Purpose
+                  url: '#'
+                - content: Dependencies
+                  url: '#'

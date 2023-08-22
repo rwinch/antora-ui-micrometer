@@ -76,7 +76,7 @@
 }
 
 .toc .toc-menu a.is-active {
-  border-left-color: #6bb536;
+  border-left-color: rgb(27, 168, 156);
   color: var(--doc-font-color);
 }
 

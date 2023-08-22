@@ -1,7 +1,7 @@
 url: /index.html
 component:
-  name: security
-version: '6.1.4'
+  name: micrometer
+version: '6.1.0'
 latest:
   url: '/index.html'
 previous:
@@ -13,7 +13,7 @@ next:
   url: '#'
   urlType: 'internal'
 breadcrumbs:
-  - content: Spring Security
+  - content: Micrometer
     url: '#'
     urlType: fragment
   - content: Overview

@@ -28,12 +28,12 @@
   --panel-group-background-color: #e1e8e8;
   --color-accent-1: #ebf2f2;
   --color-accent-2: #d7e7e7;
-  --color-accent-3: #6db33f;
+  --color-accent-3: rgb(27, 168, 156);
   --body-font-light-color: #273030;
   --body-font-dark-color: #141818;
   --link-font-color: #1565c0;
   --link_hover-font-color: #104d92;
-  --mark-background-color: #39ff14;
+  --mark-background-color: rgb(27, 168, 156);
   --selected-background-color: #191e1e;
   /* fonts */
   --rem-base: 18; /* used to compute rem value from desired pixel value (e.g., calc(18 / var(--rem-base) * 1rem) = 18px) */
@@ -51,7 +51,7 @@
   --panel-border-color: var(--color-smoke-90);
   --scrollbar-thumb-color: var(--color-gray-10);
   /* navbar */
-  --navbar-background: var(--color-white);
+  --navbar-background: rgb(33, 37, 41);
   --navbar-font-color: #191e1e;
   --navbar_hover-background: var(--navbar-background);
   --navbar-button-background: var(--color-white);
