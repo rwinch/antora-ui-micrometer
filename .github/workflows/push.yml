@@ -4,6 +4,8 @@ on:
     branches: [main]
     tags-ignore: ['**']
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
