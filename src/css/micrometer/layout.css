@@ -1,0 +1,78 @@
+.dark-theme body,
+.dark-theme .header,
+.dark-theme :root,
+.dark-theme .nav {
+  --body-background-color: #343a40;
+  --navbar-background: #343a40;
+  --nav-background: #343a40;
+}
+
+.navbar {
+  border-top: 6px solid #1ba89c;
+}
+
+.navbar img.light {
+  display: block;
+}
+
+.navbar img.dark {
+  display: none;
+}
+
+.dark-theme .navbar img.light {
+  display: none;
+}
+
+.dark-theme .navbar img.dark {
+  display: block;
+}
+
+footer.footer #spring-links {
+  flex: 1;
+}
+
+footer.footer #social-icons {
+  width: 120px;
+}
+
+.toc .toc-menu a.is-active {
+  border-color: #1ba89c;
+}
+
+footer #social-icons a:hover svg .cls-1 {
+  fill: #1ba89c;
+}
+
+.doc .quoteblock,
+.doc .verseblock {
+  border-color: #1ba89c;
+}
+.doc .quoteblock .attribution {
+  color: #1ba89c;
+}
+
+footer.footer img.light {
+  display: block;
+}
+
+footer.footer img.dark {
+  display: none;
+}
+
+.dark-theme footer.footer img.light {
+  display: none;
+}
+
+.dark-theme footer.footer img.dark {
+  display: block;
+}
+
+.nav-panel-menu .context .version,
+#modal-versions .current {
+  background: #1ba89c;
+  color: white;
+}
+
+mark {
+  background: #5accc2;
+}
