@@ -9,6 +9,11 @@
 
 .navbar {
   border-top: 6px solid #1ba89c;
+  background: #fff;
+}
+
+.dark-theme .navbar {
+  background: var(--navbar-background);
 }
 
 .navbar img.light {
