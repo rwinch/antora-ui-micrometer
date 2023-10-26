@@ -1,6 +1,6 @@
 url: /search.html
 component:
-  name: security
+  name: micrometer
 version: '6.1.0'
 latest:
   url: '/index.html'

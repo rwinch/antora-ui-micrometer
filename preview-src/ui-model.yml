@@ -13,8 +13,8 @@ site:
     versions: &micrometer_versions
     - &micrometer_latest_version
       url: '/index.html'
-      version: '6.1.4'
-      displayVersion: '6.1.4'
+      version: '6.1.0'
+      displayVersion: '6.1.0'
       title: *component_title
       versionSegment: '5.6'
     - &micrometer_5_5_version
@@ -35,8 +35,8 @@ shared:
         url: '#'
         versions:
           - url: '/index.html'
-            version: '6.1.4'
-            displayVersion: '6.1.4'
+            version: '6.1.0'
+            displayVersion: '6.1.0'
             title: *component_title
             versionSegment: '5.6'
           - url: '/5.5/index.html'
@@ -45,10 +45,10 @@ shared:
             versionSegment: '5.5'
       componentVersion: *micrometer_5_5_version
       versions:
-        - version: '6.1.4'
-          displayVersion: '6.1.4'
+        - version: '6.1.0'
+          displayVersion: '6.1.0'
           url: '#'
-          versionSegment: ''
+          versionSegment: '5.6'
         - version: '5.5.9'
           displayVersion: '5.5.9'
           versionSegment: '5.5'
@@ -65,7 +65,7 @@ shared:
                   url: '#'
                 - content: Protection Against Exploits
                   url: '#'
-    6.1.4:
+    6.1.0:
       home: true
       title: Micrometer
       relativeSrcPath: index.adoc
@@ -76,10 +76,10 @@ shared:
         versions: *micrometer_versions
       componentVersion: *micrometer_latest_version
       versions:
-        - version: '6.1.4'
-          displayVersion: '6.1.4'
+        - version: '6.1.0'
+          displayVersion: '6.1.0'
           url: '#'
-          versionSegment: ''
+          versionSegment: '5.6'
         - version: '5.5.9'
           displayVersion: '5.5.9'
           url: '#'
