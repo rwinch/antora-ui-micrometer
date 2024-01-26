@@ -2,7 +2,7 @@
 
 ;(function () {
   const isMac = () => navigator.platform.indexOf('Mac') > -1
-
+  let loaded = false
   const config = document.getElementById('search-script').dataset
   const client = algoliasearch(config.appId, config.apiKey)
   let selected = null
@@ -13,6 +13,10 @@
   })
 
   let lastRenderArgs
+
+  const decodeHtmlEntities = (str) => {
+    return str.replaceAll('&amp;lt;', '&lt;').replaceAll('&amp;gt;', '&gt;')
+  }
 
   const infiniteHits = instantsearch.connectors.connectInfiniteHits((renderArgs, isFirstRender) => {
     const { hits, showMore, widgetParams } = renderArgs
@@ -80,14 +84,13 @@
             .filter((item) => !!item)
             .join(' - ')
 
-          console.log(label)
           return `<li>
               <a href="${hit.url}" class="ais-Hits-item">
                 <div class="hit-name">
-                  ${label}
+                  ${decodeHtmlEntities(label)}
                 </div>
-                ${breadcrumbs}
-                ${content}
+                ${decodeHtmlEntities(breadcrumbs)}
+                ${decodeHtmlEntities(content)}
               </a>
             </li>`
         })
@@ -219,9 +222,11 @@
     }),
   ])
 
-  search.start()
-
   const open = () => {
+    if (!loaded) {
+      search.start()
+      loaded = true
+    }
     selectHit(null)
     MicroModal.show('modal-1', {
       disableScroll: true,
